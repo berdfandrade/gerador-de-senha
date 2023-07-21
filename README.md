@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+## Gerador de Senha
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O Gerador de Senha é um componente React que permite gerar senhas aleatórias com base no tamanho especificado pelo usuário. O componente apresenta uma interface simples, onde o usuário pode definir o tamanho da senha e, em seguida, clicar em um botão para gerar uma senha aleatória.
 
-## Available Scripts
+### Funcionalidades
 
-In the project directory, you can run:
+- Escolher o tamanho da senha desejada, variando de 6 a 35 caracteres.
+- Gerar senhas aleatórias com base no tamanho especificado.
+- Copiar a senha gerada para a área de transferência com um único clique.
+- A interface exibe a senha gerada e um botão de cópia para facilitar o acesso.
 
-### `npm start`
+### Como usar
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Instalação das dependências:
+   Certifique-se de ter instalado o Chakra UI, React Icons e a função `gerarSenha` corretamente. Caso contrário, você precisará instalar essas dependências antes de utilizar o componente.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Importação do componente:
+   Para usar o Gerador de Senha em sua aplicação React, importe o componente no arquivo onde você deseja utilizá-lo:
 
-### `npm test`
+```javascript
+import Gerador from './Gerador';
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Utilização:
+   Basta adicionar o componente `<Gerador />` ao local onde você deseja exibir o gerador de senhas em sua aplicação.
 
-### `npm run build`
+```javascript
+function App() {
+  return (
+    <div>
+      {/* Outros componentes */}
+      <Gerador />
+    </div>
+  );
+}
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+export default App;
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Personalização
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+O componente Gerador de Senha pode ser personalizado de acordo com as necessidades do projeto. As cores, tamanhos, estilos e funcionalidades podem ser ajustados utilizando o Chakra UI e as propriedades dos elementos React.
 
-### `npm run eject`
+### Dependências
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- React: [https://reactjs.org/](https://reactjs.org/)
+- Chakra UI: [https://chakra-ui.com/](https://chakra-ui.com/)
+- React Icons: [https://react-icons.github.io/react-icons/](https://react-icons.github.io/react-icons/)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Licença
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este componente está disponível sob a [MIT License](LICENSE).
